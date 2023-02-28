@@ -27,7 +27,7 @@ def upload_file():
             months = df['Month']
             income = df['Income']
             expense = df['Expense']
-            plot_bytes = plot_income_expense_over_time(first_name, last_name, months, income, expense)
+            plot_bytes = plot_income_expense_over_time(first_name, last_name,months, income, expense)
 
             # Connect to the database
             conn = sqlite3.connect('database.db')
