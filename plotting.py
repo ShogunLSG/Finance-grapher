@@ -1,3 +1,4 @@
+import io
 import matplotlib.pyplot as plt
 
 def plot_income_expense_over_time(first_name, last_name,months, income, expense):
@@ -7,8 +8,9 @@ def plot_income_expense_over_time(first_name, last_name,months, income, expense)
     plt.ylabel('Amount')
     plt.title('Income and Expense Over Time')
     plt.legend()
-    filename = f'{first_name}_{last_name}_temporal_graph.png'
-    plt.savefig(filename)
+    buffer = io.BytesIO()
+    plot_bytes = buffer.getvalue()
+    plt.savefig(buffer, format='png')
     plt.close()
-    return f'statis/{filename}'
+    return plot_bytes
     
