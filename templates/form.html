@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload File Example{% endblock %}
+
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-md-6 border p-3">
+      <h1 class="mb-3">Upload a File</h1>
+      <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="first_name">First Name:</label>
+          <input type="text" class="form-control" name="first_name" id="first_name">
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name:</label>
+          <input type="text" class="form-control" name="last_name" id="last_name">
+        </div>
+        <div class="form-group">
+          <label for="date_of_birth">Date of Birth:</label>
+          <input type="date" class="form-control" name="date_of_birth" id="date_of_birth">
+        </div>
+        <div class="form-group">
+          <label for="file">File:</label>
+          <input type="file" class="form-control-file" name="file" id="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
