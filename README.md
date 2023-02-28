@@ -4,7 +4,7 @@ Graphs finances from an excel input file.
 File Upload and Visualization Project
 This project allows users to upload a CSV file containing monthly income and expense data for a specific individual and generates a visualization of the data. The visualization is a line chart that shows the income and expense over time.
 
-Getting Started
+Getting Started: 
 To get started with this project, you'll need to do the following:
 
 Clone this repository to your local machine.
@@ -22,7 +22,7 @@ The CSV file must contain two columns labeled "income" and "expense", and one co
 The visualization is generated using the Matplotlib library and saved as a PNG image. The image is then encoded as a Base64 string and embedded in the success page using a data URI.
 This project uses Bootstrap for styling, and the necessary files are included in the static folder.
 If there are any issues with the uploaded file, an error message will be displayed on the upload page.
-Contributing
+Contributing: 
 If you'd like to contribute to this project, you can do so by creating a pull request with your changes. Please make sure to include a clear description of the changes you've made and any relevant test cases.
 
 License
